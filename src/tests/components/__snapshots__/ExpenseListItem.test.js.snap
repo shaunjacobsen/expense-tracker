@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should render ExpenseListItem 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ExpenseListItem
+    amount={195}
+    createdAt={-345600000}
+    description="Gum"
+    id={1}
+    note=""
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <strong>
+          $
+          1.95
+</strong>,
+        " ",
+        <Link
+          replace={false}
+          to="/edit/1"
+>
+          Gum
+</Link>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "$",
+            1.95,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "$",
+          1.95,
+        ],
+        "type": "strong",
+      },
+      " ",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Gum",
+          "replace": false,
+          "to": "/edit/1",
+        },
+        "ref": null,
+        "rendered": "Gum",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <strong>
+            $
+            1.95
+</strong>,
+          " ",
+          <Link
+            replace={false}
+            to="/edit/1"
+>
+            Gum
+</Link>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "$",
+              1.95,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "$",
+            1.95,
+          ],
+          "type": "strong",
+        },
+        " ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Gum",
+            "replace": false,
+            "to": "/edit/1",
+          },
+          "ref": null,
+          "rendered": "Gum",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
