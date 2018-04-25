@@ -8,7 +8,7 @@ export default [
     note: '',
     createdAt: moment(0)
       .subtract(4, 'day')
-      .valueOf()
+      .valueOf(),
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export default [
     note: '',
     createdAt: moment(0)
       .add(4, 'day')
-      .valueOf()
+      .valueOf(),
   },
   {
     id: 3,
@@ -26,6 +26,6 @@ export default [
     note: '',
     createdAt: moment(0)
       .subtract(2, 'day')
-      .valueOf()
-  }
+      .valueOf(),
+  },
 ];

@@ -25,16 +25,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <strong>
-          $
-          1.95
+          $1.95
 </strong>,
-        " ",
         <Link
           replace={false}
           to="/edit/1"
 >
           Gum
 </Link>,
+        "December 27th, 1969",
       ],
     },
     "ref": null,
@@ -44,19 +43,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "$",
-            1.95,
-          ],
+          "children": "$1.95",
         },
         "ref": null,
-        "rendered": Array [
-          "$",
-          1.95,
-        ],
+        "rendered": "$1.95",
         "type": "strong",
       },
-      " ",
       Object {
         "instance": null,
         "key": undefined,
@@ -70,6 +62,7 @@ ShallowWrapper {
         "rendered": "Gum",
         "type": [Function],
       },
+      "December 27th, 1969",
     ],
     "type": "div",
   },
@@ -81,16 +74,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <strong>
-            $
-            1.95
+            $1.95
 </strong>,
-          " ",
           <Link
             replace={false}
             to="/edit/1"
 >
             Gum
 </Link>,
+          "December 27th, 1969",
         ],
       },
       "ref": null,
@@ -100,19 +92,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "$",
-              1.95,
-            ],
+            "children": "$1.95",
           },
           "ref": null,
-          "rendered": Array [
-            "$",
-            1.95,
-          ],
+          "rendered": "$1.95",
           "type": "strong",
         },
-        " ",
         Object {
           "instance": null,
           "key": undefined,
@@ -126,6 +111,7 @@ ShallowWrapper {
           "rendered": "Gum",
           "type": [Function],
         },
+        "December 27th, 1969",
       ],
       "type": "div",
     },
