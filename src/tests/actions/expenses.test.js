@@ -5,6 +5,7 @@ import {
   addExpense,
   editExpense,
   removeExpense,
+  startRemoveExpense,
   setExpenses,
   startSetExpenses,
 } from './../../actions/expenses';
@@ -30,6 +31,25 @@ test('it should set up the removeExpense action object', () => {
     type: 'REMOVE_EXPENSE',
     id: '123-456',
   });
+});
+
+test('it should remove an expense from firebase', done => {
+  const store = createMockStore({});
+  const idToRemove = expenses[1].id;
+  store
+    .dispatch(startRemoveExpense({ id: idToRemove }))
+    .then(() => {
+      const actions = store.getActions();
+      expect(actions[0]).toEqual({
+        type: 'REMOVE_EXPENSE',
+        id: idToRemove,
+      });
+      return database.ref(`expenses/${idToRemove}`).once('value');
+    })
+    .then(snapshot => {
+      expect(snapshot.val()).toBeFalsy();
+      done();
+    }).catch(done);
 });
 
 test('it should set up the editExpense action object', () => {
@@ -76,11 +96,11 @@ test('it should add expense to database and store', done => {
       .then(snapshot => {
         expect(snapshot.val()).toEqual(expenseData);
         done();
-      });
+      }).catch(done);;
   });
 });
 
-test('it should add expense with defaults to database and store', (done) => {
+test('it should add expense with defaults to database and store', done => {
   const store = createMockStore({});
   const expenseDefaults = {
     description: '',
@@ -105,7 +125,7 @@ test('it should add expense with defaults to database and store', (done) => {
       .then(snapshot => {
         expect(snapshot.val()).toEqual(expenseDefaults);
         done();
-      });
+      }).catch(done);
   });
 });
 
