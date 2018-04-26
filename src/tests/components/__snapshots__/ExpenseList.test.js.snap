@@ -1,323 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it should render ExpenseList with empty message 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ExpenseList
-    expenses={Array []}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <h3>
-          Expense List
-</h3>,
-        Array [],
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Expense List",
-        },
-        "ref": null,
-        "rendered": "Expense List",
-        "type": "h3",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h3>
-            Expense List
-</h3>,
-          Array [],
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Expense List",
-          },
-          "ref": null,
-          "rendered": "Expense List",
-          "type": "h3",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<div>
+  <h3>
+    Expense List
+  </h3>
+</div>
 `;
 
 exports[`it should render ExpenseList with expenses 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ExpenseList
-    expenses={
-        Array [
-            Object {
-              "amount": 195,
-              "createdAt": -345600000,
-              "description": "Gum",
-              "id": 1,
-              "note": "",
-            },
-            Object {
-              "amount": 350,
-              "createdAt": 345600000,
-              "description": "Sugar",
-              "id": 2,
-              "note": "",
-            },
-            Object {
-              "amount": 600,
-              "createdAt": -172800000,
-              "description": "Flour",
-              "id": 3,
-              "note": "",
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <h3>
-          Expense List
-</h3>,
-        Array [
-          <ExpenseListItem
-            amount={195}
-            createdAt={-345600000}
-            description="Gum"
-            id={1}
-            note=""
-/>,
-          <ExpenseListItem
-            amount={350}
-            createdAt={345600000}
-            description="Sugar"
-            id={2}
-            note=""
-/>,
-          <ExpenseListItem
-            amount={600}
-            createdAt={-172800000}
-            description="Flour"
-            id={3}
-            note=""
-/>,
-        ],
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Expense List",
-        },
-        "ref": null,
-        "rendered": "Expense List",
-        "type": "h3",
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "function",
-        "props": Object {
-          "amount": 195,
-          "createdAt": -345600000,
-          "description": "Gum",
-          "id": 1,
-          "note": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "function",
-        "props": Object {
-          "amount": 350,
-          "createdAt": 345600000,
-          "description": "Sugar",
-          "id": 2,
-          "note": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "3",
-        "nodeType": "function",
-        "props": Object {
-          "amount": 600,
-          "createdAt": -172800000,
-          "description": "Flour",
-          "id": 3,
-          "note": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h3>
-            Expense List
-</h3>,
-          Array [
-            <ExpenseListItem
-              amount={195}
-              createdAt={-345600000}
-              description="Gum"
-              id={1}
-              note=""
-/>,
-            <ExpenseListItem
-              amount={350}
-              createdAt={345600000}
-              description="Sugar"
-              id={2}
-              note=""
-/>,
-            <ExpenseListItem
-              amount={600}
-              createdAt={-172800000}
-              description="Flour"
-              id={3}
-              note=""
-/>,
-          ],
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Expense List",
-          },
-          "ref": null,
-          "rendered": "Expense List",
-          "type": "h3",
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "function",
-          "props": Object {
-            "amount": 195,
-            "createdAt": -345600000,
-            "description": "Gum",
-            "id": 1,
-            "note": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "function",
-          "props": Object {
-            "amount": 350,
-            "createdAt": 345600000,
-            "description": "Sugar",
-            "id": 2,
-            "note": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "3",
-          "nodeType": "function",
-          "props": Object {
-            "amount": 600,
-            "createdAt": -172800000,
-            "description": "Flour",
-            "id": 3,
-            "note": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<div>
+  <h3>
+    Expense List
+  </h3>
+  <ExpenseListItem
+    amount={195}
+    createdAt={-345600000}
+    description="Gum"
+    id="1"
+    key="1"
+    note=""
+  />
+  <ExpenseListItem
+    amount={350}
+    createdAt={345600000}
+    description="Sugar"
+    id="2"
+    key="2"
+    note=""
+  />
+  <ExpenseListItem
+    amount={600}
+    createdAt={-172800000}
+    description="Flour"
+    id="3"
+    key="3"
+    note=""
+  />
+</div>
 `;

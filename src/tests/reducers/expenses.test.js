@@ -50,3 +50,26 @@ test('it should not edit an expense if ID not found', () => {
   const state = expensesReducer(expenses, action);
   expect(state[0].amount).toEqual(expenses[0].amount);
 });
+
+test('it should set expenses', () => {
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses
+  }
+  const initialState = expensesReducer(undefined, action);
+  expect(initialState).toEqual(expenses);
+});
+
+test('it should overwrite already set expenses', () => {
+  const initialAction = {
+    type: 'SET_EXPENSES',
+    expenses: [expenses[1]]
+  }
+  const initialState = expensesReducer(undefined, initialAction);
+  const overwriteAction = {
+    type: 'SET_EXPENSES',
+    expenses: [expenses[0], expenses[2]]
+  }
+  const overwrittenState = expensesReducer(undefined, overwriteAction);
+  expect(overwrittenState).toEqual([expenses[0], expenses[2]]);
+});

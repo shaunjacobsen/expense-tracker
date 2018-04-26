@@ -2,7 +2,7 @@ import moment from 'moment';
 
 export default [
   {
-    id: 1,
+    id: '1',
     description: 'Gum',
     amount: 195,
     note: '',
@@ -11,7 +11,7 @@ export default [
       .valueOf(),
   },
   {
-    id: 2,
+    id: '2',
     description: 'Sugar',
     amount: 350,
     note: '',
@@ -20,7 +20,7 @@ export default [
       .valueOf(),
   },
   {
-    id: 3,
+    id: '3',
     description: 'Flour',
     amount: 600,
     note: '',
