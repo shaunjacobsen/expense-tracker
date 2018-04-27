@@ -4,8 +4,22 @@ exports[`it should render the LoginPage component properly 1`] = `
 <div
   className="box-layout"
 >
-  <button>
-    Login
-  </button>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      Manage your expenses!
+    </p>
+    <button
+      className="button"
+    >
+      Login with Google
+    </button>
+  </div>
 </div>
 `;
